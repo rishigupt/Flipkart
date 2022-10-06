@@ -1,10 +1,7 @@
 package org.rishi.automation.tests;
 
 import org.rishi.automation.objects.ProductData;
-import org.rishi.automation.pages.AccountPage;
-import org.rishi.automation.objects.LoginData;
 import org.rishi.automation.pages.HomePage;
-import org.rishi.automation.utils.JacksonUtils;
 import org.rishi.automation.base.BaseTest;
 import io.qameta.allure.*;
 import org.testng.annotations.Test;

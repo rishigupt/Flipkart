@@ -30,37 +30,4 @@ public class LoginTest extends BaseTest {
                 .isLoaded()
                 .clickLogoutBtn();
     }
-
-/*    @Test(enabled = false)
-    public void loginAndLogoutWithSetters() {
-
-        LoginData loginData = new LoginData().
-                setUsername("lonor10769@dnitem.com").
-                setPassword("jaiho");
-        HomePage homePage = new HomePage(getDriver()).load();
-        AccountPage accountPage = homePage.setLoginDetails(loginData)
-                .clickLoginBtn()
-                .mouseHoverMyAccount()
-                .clickMyProfile();
-        accountPage
-                .isLoaded()
-                .clickLogoutBtn();
-    }*/
-
-/*    @Test
-    public void loginAndLogoutWithConstructor() {
-
-        LoginData loginData = new LoginData("lonor10769@dnitem.com" , "jaiho");
-        HomePage homePage = new HomePage(getDriver()).load();
-        AccountPage accountPage = homePage.setLoginDetails(loginData)
-                .clickLoginBtn()
-                .mouseHoverMyAccount()
-                .clickMyProfile();
-        accountPage
-                .isLoaded()
-                .clickLogoutBtn();
-    }*/
-
-
-
 }

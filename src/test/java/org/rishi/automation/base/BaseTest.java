@@ -35,7 +35,7 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void startDriver(@Optional String browser){
-        if (browser == null) browser = "CHROME";
+        if (browser == null) browser = "EDGE";
         setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
         /*System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
         "Driver = " + getDriver());*/
