@@ -37,15 +37,15 @@ public class BaseTest {
     public void startDriver(@Optional String browser){
         if (browser == null) browser = "EDGE";
         setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
-        /*System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
-        "Driver = " + getDriver());*/
+        System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
+        "Driver = " + getDriver());
     }
 
     @Parameters("browser")
     @AfterMethod
     public void quitDriver(@Optional String browser, ITestResult result) throws IOException {
-        /*System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
-                "Driver = " + getDriver());*/
+        System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
+                "Driver = " + getDriver());
         if (result.getStatus() == ITestResult.FAILURE){
             Date date = new Date();
             File destFile = new File("snapshot" + File.separator + browser + File.separator +

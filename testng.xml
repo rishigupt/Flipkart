@@ -1,18 +1,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" parallel="tests" >
-    <test name="Chrome" parallel="methods">
+<suite name="Suite1" thread-count="2" parallel="tests" >
+    <test name="Chrome" thread-count="2" parallel="methods">
         <parameter name="browser"  value="CHROME"/>
         <classes>
-  <!--          <class name="org.rishi.automation.tests.SearchTest" />
-            <class name="org.rishi.automation.tests.LoginTest" />-->
+            <class name="org.rishi.automation.tests.FirstTest" />
         </classes>
     </test>
-    <test name="Edge" parallel="methods">
+    <test name="Edge" thread-count="2" parallel="methods">
         <parameter name="browser"  value="EDGE"/>
         <classes>
-            <class name="org.rishi.automation.tests.SearchTest" />
-            <class name="org.rishi.automation.tests.LoginTest" />
+            <class name="org.rishi.automation.tests.FirstTest" />
         </classes>
     </test>
 </suite>
