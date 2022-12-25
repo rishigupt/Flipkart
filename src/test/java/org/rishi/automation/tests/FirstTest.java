@@ -17,7 +17,7 @@ public class FirstTest extends BaseTest {
     public FirstTest() {
     }
 
-    @Test
+    @Test(enabled = false)
     public void loginAndLogout() throws IOException {
 
         LoginData loginData = JacksonUtils.deserializeJson("loginDetails.json", LoginData.class);
